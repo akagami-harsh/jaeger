@@ -42,6 +42,15 @@ jobs:
     - name: Run unit tests
       run: make test-ci
 
+    - name: Generate JUnit XML
+      run: go-junit-report < cover.out > test-results.xml
+
+    - name: Publish Unit Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        files: "**/test-results.xml"
+
     - name: Upload coverage to codecov
       uses: codecov/codecov-action@894ff025c7b54547a9a2a1e9f228beae737ad3c2
       with:
