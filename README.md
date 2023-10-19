@@ -250,3 +250,4 @@ Copyright (c) The Jaeger Authors. [Apache 2.0 License](./LICENSE).
 [slack]: https://cloud-native.slack.com/archives/CGG7NFUJ3
 [slack-join]: https://slack.cncf.io
 [slack-img]: https://img.shields.io/badge/slack-join%20chat%20%E2%86%92-brightgreen?logo=slack
+tes
